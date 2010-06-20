@@ -13,7 +13,7 @@
     <menuitem id="context-choosy"
               label="&choosyContext.label;"
               accesskey="&choosyContext.accesskey;"
-              insertafter="context-stop"
+              insertafter="context-openlinkintab"
               oncommand="choosy.onMenuItemCommand(event)"/>
   </popup>
 
