@@ -10,18 +10,19 @@
   </stringbundleset>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="context-choosy" label="&choosyContext.label;"
+    <menuitem id="context-choosy"
+              label="&choosyContext.label;"
               accesskey="&choosyContext.accesskey;"
               insertafter="context-stop"
               oncommand="choosy.onMenuItemCommand(event)"/>
   </popup>
 
   <toolbarpalette id="BrowserToolbarPalette">
-  <toolbarbutton id="choosy-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
-    label="&choosyToolbarButton.label;" tooltiptext="&choosyToolbarButton.tooltip;"
-    oncommand="choosy.onToolbarButtonCommand()"/>
+    <toolbarbutton id="choosy-toolbar-button"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   label="&choosyToolbarButton.label;"
+                   tooltiptext="&choosyToolbarButton.tooltip;"
+                   oncommand="choosy.onToolbarButtonCommand()"/>
   </toolbarpalette>
-
-
 
 </overlay>
