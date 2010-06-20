@@ -1,4 +1,4 @@
-<!ENTITY choosyContext.label "Your Menuitem">
-<!ENTITY choosyContext.accesskey "Y">
+<!ENTITY choosyContext.label "Open with Choosy">
+<!ENTITY choosyContext.accesskey "C">
 <!ENTITY choosyToolbarButton.label "Choosy">
 <!ENTITY choosyToolbarButton.tooltip "Open with Choosy">
