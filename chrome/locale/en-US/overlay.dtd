@@ -1,8 +1,0 @@
-<!ENTITY choosy.label "Your localized menuitem">
-<!ENTITY choosyContext.label "Your Menuitem">
-<!ENTITY choosyContext.accesskey "Y">
-<!ENTITY choosyToolbarButton.label "Your Toolbar Button">
-<!ENTITY choosyToolbarButton.tooltip "This is your toolbar button!">
-<!ENTITY choosySidebar.label "Your Sidebar">
-<!ENTITY choosyToolbar.name  "example">
-<!ENTITY choosyToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &choosyToolbar.name;">

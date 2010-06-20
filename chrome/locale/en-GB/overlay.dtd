@@ -1,0 +1,5 @@
+<!ENTITY choosy.label "Your localized menuitem">
+<!ENTITY choosyContext.label "Your Menuitem">
+<!ENTITY choosyContext.accesskey "Y">
+<!ENTITY choosyToolbarButton.label "Choosy">
+<!ENTITY choosyToolbarButton.tooltip "Open with Choosy">
