@@ -15,8 +15,8 @@ var choosy = {
     }
   },
 
-  onToolbarButtonCommand: function(event) {
-    
+  onToolbarButtonCommand: function() {
+    choosy.promptAll(gBrowser.contentDocument.location);
   },
 
   promptAll: function(url) {
