@@ -5,7 +5,14 @@ var choosy = {
   },
 
   onMenuItemCommand: function(event) {
-    
+    var node = document.popupNode;
+    while(node && node.tagName !== "A") {
+      node = node.parentNode;
+    }
+
+    if(node && typeof node.href !== "undefined") {
+      choosy.promptAll(node.href);
+    }
   },
 
   onToolbarButtonCommand: function(event) {
