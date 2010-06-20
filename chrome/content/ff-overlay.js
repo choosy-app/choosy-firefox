@@ -4,8 +4,7 @@ choosy.onFirefoxLoad = function(event) {
 };
 
 choosy.showFirefoxContextMenu = function(event) {
-  // show or hide the menuitem based on what the context menu is on
-  document.getElementById("context-choosy").hidden = gContextMenu.onImage;
+  document.getElementById("context-choosy").hidden = !gContextMenu.onLink;
 };
 
 window.addEventListener("load", choosy.onFirefoxLoad, false);
