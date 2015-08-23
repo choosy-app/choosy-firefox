@@ -1,9 +1,37 @@
-var self = require('sdk/self');
+var buttons = require('sdk/ui/button/action');
+var chrome = require('chrome');
+var tabs = require('sdk/tabs');
 
-// a dummy function, to show how tests work.
-// to see how to test this function, look at test/test-index.js
-function dummy(text, callback) {
-  callback(text);
-}
+var Choosy = {
+  'promptAll': function (url) {
+    var uri, service;
 
-exports.dummy = dummy;
+    uri = this.buildURI('prompt.all', url);
+    service = chrome.Cc['@mozilla.org/uriloader/external-protocol-service;1'].
+      getService(chrome.Ci.nsIExternalProtocolService);
+
+    service.loadURI(uri, null);
+  },
+
+  'buildURI': function (method, url) {
+    var service, uri;
+
+    service = chrome.Cc['@mozilla.org/network/io-service;1'].
+      getService(chrome.Ci.nsIIOService);
+    uri = 'x-choosy://' + method + '/' + escape(url);
+    return service.newURI(uri, null, null);
+  }
+};
+
+buttons.ActionButton({
+  'id': 'choosy',
+  'label': 'Open with Choosy',
+  'icon': {
+    '16': './icon16.png',
+    '32': './icon32.png',
+    '64': './icon64.png'
+  },
+  onClick: function (state) {
+    Choosy.promptAll(tabs.activeTab.url);
+  }
+});
