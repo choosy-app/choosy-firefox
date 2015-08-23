@@ -39,7 +39,7 @@ buttons.ActionButton({
 });
 
 contextMenu.Item({
-  'label': 'Open with Choosy',
+  'label': 'Open Link with Choosy',
   'context': contextMenu.SelectorContext('a[href]'),
   'image': self.data.url('icon32.png'),
   'contentScript': 'self.on("click", function (el) { self.postMessage(el.href); });',
