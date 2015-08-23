@@ -1,0 +1,13 @@
+{
+  "title": "Choosy",
+  "name": "choosy-firefox",
+  "version": "0.0.0",
+  "description": "Integrates Choosy with Firefox (Mac OS X only)",
+  "main": "index.js",
+  "author": "George Brocklehurst",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
