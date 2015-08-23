@@ -1,7 +1,0 @@
-content   choosy                 chrome/content/
-skin      choosy   classic/1.0   chrome/skin/
-locale    choosy   en-GB         chrome/locale/en-GB/
-
-
-overlay   chrome://browser/content/browser.xul   chrome://choosy/content/ff-overlay.xul
-style chrome://global/content/customizeToolbar.xul chrome://choosy/skin/overlay.css
