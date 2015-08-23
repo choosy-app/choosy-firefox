@@ -1,5 +1,7 @@
 var buttons = require('sdk/ui/button/action');
 var chrome = require('chrome');
+var contextMenu = require('sdk/context-menu');
+var self = require('sdk/self');
 var tabs = require('sdk/tabs');
 
 var Choosy = {
@@ -33,5 +35,15 @@ buttons.ActionButton({
   },
   onClick: function (state) {
     Choosy.promptAll(tabs.activeTab.url);
+  }
+});
+
+contextMenu.Item({
+  'label': 'Open with Choosy',
+  'context': contextMenu.SelectorContext('a[href]'),
+  'image': self.data.url('icon32.png'),
+  'contentScript': 'self.on("click", function (el) { self.postMessage(el.href); });',
+  'onMessage': function (url) {
+    Choosy.promptAll(url);
   }
 });
