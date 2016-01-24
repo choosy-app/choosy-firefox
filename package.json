@@ -2,7 +2,7 @@
   "id": "firefox@choosyosx.com",
   "title": "Choosy",
   "name": "choosy-firefox",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Integrates Choosy with Firefox (Mac OS X only)",
   "main": "index.js",
   "author": "George Brocklehurst",
