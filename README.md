@@ -1,7 +1,4 @@
 # Choosy Firefox
 
-Integrates Choosy with Firefox (Mac OS X only)
-
-## Packaging a new version
-
-    jpm xpi
+This repo is no longer in use.
+See <https://github.com/georgebrock/choosy-chrome> instead.
